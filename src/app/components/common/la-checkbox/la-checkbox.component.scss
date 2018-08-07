@@ -1,0 +1,7 @@
+// Import theming functions
+@import '~@angular/material/theming';
+// Import your custom theme
+@import 'src/land-theme.scss';
+.mat-checkbox-checked {
+    color:mat-color($my-app-primary)
+}

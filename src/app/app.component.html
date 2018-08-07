@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <app-header class="header" (toggleMenu)="appContainer.toggleNav()">
+    <app-land-filter class="land-filter"></app-land-filter>
+  </app-header>
+  <app-container  #appContainer class="container">
+    <ng-template appCardDirective></ng-template>
+    <app-baidu-map 
+    (landClicked)="onLandClicked($event)"
+    ></app-baidu-map>
+  </app-container>
+</div>
